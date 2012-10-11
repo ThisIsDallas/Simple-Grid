@@ -17,7 +17,6 @@ body {
 [class*='col-'] {
 	float: left;
 	padding-right: 20px;
-	margin-bottom: 20px;
 }
 
 [class*='col-']:last-of-type {
@@ -25,8 +24,11 @@ body {
 }
 
 .grid {
-	margin-right: auto;
-	margin-left: auto;
+	width: 100%;
+	max-width: 1140px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
 }
 
 .grid:after {
@@ -36,7 +38,7 @@ body {
 }
 
 .grid-pad {
-	padding: 20px 0 20px 20px;
+	padding: 20px 0 0px 20px;
 }
 
 .grid-pad > [class*='col-']:last-of-type {
@@ -117,3 +119,27 @@ body {
 .col-7-12 {
 	width: 58.33%
 }
+
+@media handheld, only screen and (max-width: 767px) {
+
+	
+	.grid {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	[class*='col-'] {
+	width: auto;
+	float: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+
