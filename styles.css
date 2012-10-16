@@ -68,7 +68,7 @@ p {
 	margin-top: -20px;
 }
 
-button {
+header .button {
 	background: #2799c6; /* Old browsers */
 	background: -moz-linear-gradient(top,  #2799c6 16%, #006599 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(16%,#2799c6), color-stop(100%,#006599)); /* Chrome,Safari4+ */
