@@ -104,6 +104,23 @@ button:active {
 	border: 1px solid #002751;
 }
 
+#viewport {
+	position: relative;
+	width: 800px;
+	height: 600px;
+	overflow: hidden;
+	background:url('images/milk_tea.jpg') 0 0 no-repeat;
+}
+
+#viewport .smoke {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	background:url('images/smoke-texture.png') no-repeat;
+	bottom: 150px;
+	margin-left:0px;
+}
+
 .features {
 	background: url('img/headingline.jpg') repeat-x scroll 0 21px transparent;
 	text-align: center;
