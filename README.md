@@ -28,4 +28,4 @@ If you have a page and would like four columns of content, you would do:
 The first column of content in your grid will always be floated left. If you would like to float a column to the right, all you have to do is add the class <code>push-right</code>.</p>
 
 <h3>Preview</h3>
-<p>To see the grid in action jump on over to the <a href="" title="Simple Grid examples">Simple Grid example page</a>.</p>
+<p>To see the grid in action jump on over to the <a href="http://thisisdallas.github.com/Simple-Grid/" title="Simple Grid examples">Simple Grid example page</a>.</p>
