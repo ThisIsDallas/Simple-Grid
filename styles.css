@@ -115,7 +115,7 @@ button:active {
 	position: absolute;
 	width: 250px;
 	height: 250px;
-	background:url('smoke-texture.png') no-repeat;
+	background:url('http://cloud.github.com/downloads/Dhirajkumar/Demos/smoke-texture.png') no-repeat;
 	bottom: 150px;
 	margin-left:0px;
 }
