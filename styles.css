@@ -40,6 +40,7 @@ p {
 	background-image: url('img/bg.jpg');
 	background-position: center top;
 	background-repeat: no-repeat;
+	background-color: #000000;
 	color: #f6f6f6;
 	-moz-box-shadow: 0px 2px 9px #888;
 	-webkit-box-shadow: 0px 2px 9px #888;
