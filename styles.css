@@ -181,3 +181,10 @@ footer span {
 	float: right;
 }
 
+@media handheld, only screen and (max-width: 767px) {
+
+	footer span {
+		float: none;
+	}
+}
+
