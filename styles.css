@@ -177,13 +177,17 @@ pre.prettyprint {
 	padding-top: 35px;
 }
 
-footer span {
+.cred {
+	float: left;
+}
+
+.ghcred {
 	float: right;
 }
 
 @media handheld, only screen and (max-width: 767px) {
 
-	footer span {
+	.ghcred {
 		float: none;
 	}
 }
