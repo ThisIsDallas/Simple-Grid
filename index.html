@@ -1,1 +1,966 @@
-GitHub page
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Simple Grid
+		</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="simpleGrid.css">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:200,100,400' rel='stylesheet' type='text/css'>
+		<!--[if gte IE 9]>
+		<style type="text/css">
+			.gradient {
+				filter: none;
+			}
+		</style>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="header">
+			<div class="headerContent grid grid-pad">
+				<div class="col-1-2 header-content">
+					<h1>
+						Simple Grid
+					</h1>
+					<p>
+						Simple Grid was created for developers who need a <span>barebones</span> grid. Simple Grid works well with <span>1140px</span> layouts but easily adapts to any size of layout. With fluid columns, Simple Grid is <span>responsive</span> down to mobile.
+					</p><button class="gradient"><a href="https://github.com/ThisIsDallas/Simple-Grid/zipball/master" title="Simple Grid Download">Download</a></button> <button class="gradient"><a href="https://github.com/ThisIsDallas/Simple-Grid" title="Simple Grid Github">Github</a></button>
+				</div>
+			</div>
+		</div><!-- Grid 2/3 and 1/3-->
+		<div class="grid grid-pad">
+			<div class="features">
+				<h1>
+					Features
+				</h1>
+			</div>
+			<div class="col-1-4 icon-box">
+				<div class="content">
+					<img src="img/responsive.png" width="36" height="56">
+					<h2>
+						Responsive
+					</h2>
+					<p>
+						Built with responsive sites in mind, Simple Grid allows developers to build websites on a foundation suited for mobile and tablet browsers.
+					</p>
+				</div>
+			</div>
+			<div class="col-1-4 icon-box">
+				<div class="content">
+					<img src="img/lightweight.png" width="44" height="56">
+					<h2>
+						Lightweight
+					</h2>
+					<p>
+						Simple Grid is simply that, a grid. This is not a framework with everything from forms to buttons styled but a lightwight simple CSS grid. 
+					</p>
+				</div>
+			</div>
+			<div class="col-1-4 icon-box">
+				<div class="content">
+					<img src="img/1140px.png" width="62" height="56">
+					<h2>
+						1140px
+					</h2>
+					<p>
+						No longer do we develop for 1024px monitors. Simple Grid is designed to make sites look great on larger monitors with higher resolutions.
+					</p>
+				</div>
+			</div>
+			<div class="col-1-4 icon-box">
+				<div class="content">
+					<img src="img/12col.png" width="54" height="56">
+					<h2>
+						12 Column
+					</h2>
+					<p>
+						The twelve column structure of Simple Grid easily divides into columns of two, three, four or six, giving developers numerous layout possibilities. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="examples">
+			<div class="features">
+				<h1>
+					Content Columns 
+				</h1>
+			</div>
+			<div class="grid grid-pad">
+				<div class="col-1-1">
+					<div class="content">
+						<h3>
+							col-1-1
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-1">
+					<pre class="prettyprint linenums">
+&lt;div class="grid grid-pad"&gt;
+    &lt;div class="col-1-1"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-1-1&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+			<!-- Grid 1/2 -->
+			<div class="grid grid-pad">
+				<div class="col-1-2">
+					<div class="content">
+						<h3>
+							col-1-2
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-2">
+					<div class="content">
+						<h3>
+							col-1-2
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-1">
+					<pre class="prettyprint linenums">
+&lt;div class="grid grid-pad"&gt;
+    &lt;div class="col-1-2"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-1-2&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-1-2"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-1-2&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+
+			<!-- Grid 1/3 -->
+			<div class="grid grid-pad">
+				<div class="col-1-3">
+					<div class="content">
+						<h3>
+							col-1-3
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-3">
+					<div class="content">
+						<h3>
+							col-1-3
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-3">
+					<div class="content">
+						<h3>
+							col-1-3
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-1">
+					<pre class="prettyprint linenums">
+&lt;div class="grid grid-pad"&gt;
+    &lt;div class="col-1-3"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-1-3&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-1-3"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-1-3&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-1-3"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-1-3&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+			<!-- Grid 1/4 -->
+			<div class="grid grid-pad">
+				<div class="col-1-4">
+					<div class="content">
+						<h3>
+							col-1-4
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="content">
+						<h3>
+							col-1-4
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="content">
+						<h3>
+							col-1-4
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-4">
+					<div class="content">
+						<h3>
+							col-1-4
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/5 -->
+			<div class="grid grid-pad">
+				<div class="col-1-5">
+					<div class="content">
+						<h3>
+							col-1-1
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-5">
+					<div class="content">
+						<h3>
+							col-1-5
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-5">
+					<div class="content">
+						<h3>
+							col-1-5
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-5">
+					<div class="content">
+						<h3>
+							col-1-5
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-5">
+					<div class="content">
+						<h3>
+							col-1-5
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/6 -->
+			<div class="grid grid-pad">
+				<div class="col-1-6">
+					<div class="content">
+						<h3>
+							col-1-6
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-6">
+					<div class="content">
+						<h3>
+							col-1-6
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-6">
+					<div class="content">
+						<h3>
+							col-1-6
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-6">
+					<div class="content">
+						<h3>
+							col-1-6
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-6">
+					<div class="content">
+						<h3>
+							col-1-6
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-6">
+					<div class="content">
+						<h3>
+							col-1-6
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/7 -->
+			<div class="grid grid-pad">
+				<div class="col-1-7">
+					<div class="content">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-7">
+					<div class="content">
+						<h3>
+							col-1-7
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/8 -->
+			<div class="grid grid-pad">
+				<div class="col-1-8">
+					<div class="content">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-8">
+					<div class="content">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-8">
+					<div class="content">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-8">
+					<div class="content">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-8">
+					<div class="content">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-8">
+					<div class="content">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-8">
+					<div class="content">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-8">
+					<div class="content">
+						<h3>
+							col-1-8
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/9 -->
+			<div class="grid grid-pad">
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-9">
+					<div class="content">
+						<h3>
+							col-1-9
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/10 -->
+			<div class="grid grid-pad">
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-10">
+					<div class="content">
+						<h3>
+							1-10
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/11 -->
+			<div class="grid grid-pad">
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-11">
+					<div class="content">
+						<h3>
+							1-11
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- Grid 1/12 -->
+			<div class="grid grid-pad">
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+					<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-pad">
+				<div class="features">
+					<h1>
+						Layout Columns 
+					</h1>
+				</div>
+			</div>
+			<!-- 11/12 and 1/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-1-12">
+				<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>				</div>
+				<div class="col-11-12">
+				<div class="content">
+						<h3>
+							col-11-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-1">
+					<pre class="prettyprint linenums">
+&lt;div class="grid grid-pad"&gt;
+    &lt;div class="col-1-12"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-1-12&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-11-12"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-11-12&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+			<!-- 10/12 and 2/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-2-12">
+				<div class="content">
+						<h3>
+							col-2-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-10-12">
+				<div class="content">
+						<h3>
+							col-10-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-1">
+					<pre class="prettyprint linenums">
+&lt;div class="grid grid-pad"&gt;
+    &lt;div class="col-2-12"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-2-12&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-10-12"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-10-12&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+			<!-- 9/12 and 3/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-3-12">
+				<div class="content">
+						<h3>
+							col-3-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-9-12">
+				<div class="content">
+						<h3>
+							col-9-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-1">
+					<pre class="prettyprint linenums">
+&lt;div class="grid grid-pad"&gt;
+    &lt;div class="col-3-12"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-3-12&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="col-9-12"&gt;
+       &lt;div class="content"&gt;
+           &lt;h3&gt;col-9-12&lt;/h3&gt;
+       &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+				</div>
+			</div>
+			<!-- 8/12 and 4/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-4-12">
+				<div class="content">
+						<h3>
+							col-4-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-8-12">
+				<div class="content">
+						<h3>
+							col-8-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 7/12 and 5/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-5-12">
+				<div class="content">
+						<h3>
+							col-5-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-7-12">
+				<div class="content">
+						<h3>
+							col-7-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 6/12 and 6/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-6-12">
+				<div class="content">
+						<h3>
+							col-6-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-6-12">
+				<div class="content">
+						<h3>
+							col-6-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 7/12 and 5/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-7-12">
+				<div class="content">
+						<h3>
+							col-7-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-5-12">
+				<div class="content">
+						<h3>
+							col-5-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 8/12 and 4/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-8-12">
+				<div class="content">
+						<h3>
+							col-8-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-4-12">
+				<div class="content">
+						<h3>
+							col-4-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 9/12 and 3/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-9-12">
+				<div class="content">
+						<h3>
+							col-9-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-3-12">
+				<div class="content">
+						<h3>
+							col-3-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 10/12 and 2/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-10-12">
+				<div class="content">
+						<h3>
+							col-10-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-2-12">
+				<div class="content">
+						<h3>
+							col-2-12
+						</h3>
+					</div>
+				</div>
+			</div>
+			<!-- 11/12 and 1/12 layout -->
+			<div class="grid grid-pad">
+				<div class="col-11-12">
+				<div class="content">
+						<h3>
+							col-11-12
+						</h3>
+					</div>
+				</div>
+				<div class="col-1-12">
+				<div class="content">
+						<h3>
+							1-12
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer class="grid grid-pad">
+			<div class="col-1-1">
+				<div class="ftcontent">
+					<p>Created by <a href="dallasbass.com" title="Dallas Bass">Dallas Bass</a><span>Published with <a href="http://pages.github.com/" title="Github Pages">Github Pages</a></span></p>
+				</div>
+			</div>
+			<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+			<script type="text/javascript" src="prettify.js"></script>
+			<script>prettyPrint();</script>
+		</footer>
+	</body>
+</html>
