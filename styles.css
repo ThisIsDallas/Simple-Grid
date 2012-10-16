@@ -179,10 +179,12 @@ pre.prettyprint {
 
 .cred {
 	float: left;
+	width: 185px;
 }
 
 .ghcred {
 	float: right;
+	width: 210px;
 }
 
 @media handheld, only screen and (max-width: 767px) {
