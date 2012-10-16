@@ -13,12 +13,6 @@ body {
 	margin: 0px;
 }
 
-.content {
-	background: #888;
-	padding:20px;
-	text-align: center;
-}
-
 [class*='col-'] {
 	float: left;
 	padding-right: 20px;
