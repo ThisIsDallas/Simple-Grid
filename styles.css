@@ -40,6 +40,7 @@ p {
 	background-image: url('img/bg.jpg');
 	background-position: center top;
 	background-repeat: no-repeat;
+	background-color: #000000;
 	color: #f6f6f6;
 	-moz-box-shadow: 0px 2px 9px #888;
 	-webkit-box-shadow: 0px 2px 9px #888;
@@ -101,6 +102,23 @@ button:active {
 	background: linear-gradient(to bottom,  #006599 0%,#00437a 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006599', endColorstr='#00437a',GradientType=0 ); /* IE6-8 */
 	border: 1px solid #002751;
+}
+
+#viewport {
+	position: absolute;
+	width: 461px;
+	height: 600px;
+	overflow: hidden;
+	margin-top: -203px;
+	margin-left: 605px;
+}
+#viewport .smoke {
+	position: absolute;
+	width: 200px;
+	height: 250px;
+	background:url('https://github.com/downloads/Dhirajkumar/Demos/smoke-texture.png') no-repeat;
+	bottom: 150px;
+	margin-left:0px;
 }
 
 .features {
@@ -176,7 +194,20 @@ pre.prettyprint {
 	padding-top: 35px;
 }
 
-footer span {
+.cred {
+	float: left;
+	width: 185px;
+}
+
+.ghcred {
 	float: right;
+	width: 210px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+
+	.ghcred {
+		float: none;
+	}
 }
 
