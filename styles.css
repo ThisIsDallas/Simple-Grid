@@ -215,6 +215,10 @@ pre.prettyprint {
 	#viewport {
 		display: none;
 	}
+	
+	.header {
+		max-height: 500px;
+	}
 }
 
 
