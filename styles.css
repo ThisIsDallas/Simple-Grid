@@ -1,6 +1,7 @@
 body {
 	font-family: 'Raleway', sans-serif;
 	background: url(http://subtlepatterns.com/patterns/brillant.png);
+	overflow-y: hidden;
 }
 
 a {
