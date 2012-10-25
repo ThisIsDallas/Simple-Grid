@@ -48,6 +48,10 @@ body {
 }
 
 	/* Content Columns */
+
+	.col-1-1, .col-2-2, .col-3-3, .col-4-4, .col-5-5, .col-6-6, .col-7-7, .col-8-8, .col-9-9, .col-10-10, .col-11-11, .col-12-12 {
+		width: 100.0%;
+	}
 	
 	.col-1-12 {
 		width: 8.333333333333332%;
