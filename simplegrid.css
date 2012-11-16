@@ -47,6 +47,10 @@ body {
 	padding-right: 20px;
 }
 
+.push-right {
+	float: right;
+}
+
 /* Content Columns */
 
 .col-1-1 {
