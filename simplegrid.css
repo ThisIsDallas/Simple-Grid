@@ -138,7 +138,7 @@ body {
 		padding-right: 0px;
 	}
 	
-	[class*='col-'] {
+	[class*='col-'], [class*='col-']:last-of-type {
 		width: auto;
 		float: none;
 		margin-left: 0px;
