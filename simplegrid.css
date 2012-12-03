@@ -16,6 +16,10 @@ body {
 	margin: 0px;
 }
 
+.full-width-grid body{
+    width:100%;
+}
+
 [class*='col-'] {
 	float: left;
 	padding-right: 20px;
@@ -31,6 +35,10 @@ body {
 	min-width: 755px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+
+.full-width-grid .grid{
+    max-width:100%;
 }
 
 .grid:after {
