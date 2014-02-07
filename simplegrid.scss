@@ -1,0 +1,101 @@
+$content-column: (100% 50% 33.33% 25% 20% 16.667% 14.28% 12.5% 11.1% 10% 9.09% 8.33%);
+$layout-column: (91.66% 83.333% 75% 41.66% 58.33%);
+
+
+$gap: 20px;
+$content-max-width: 1140px;
+$content-min-width: 755px;
+
+$mobile-screen: 767px;
+$mobile-vertical-gap: 10px;
+$mobile-horizontal-gap: 20px;
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+[class*='col-'] {
+	float: left;
+	padding-right: $gap;
+	
+	&:last-of-type {
+		padding-right: 0px;
+	}
+}
+
+.grid {
+	width: 100%;
+	max-width: $content-max-width;
+	min-width: $content-min-width;
+	margin: 0 auto;
+	overflow: hidden;
+
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+.grid-pad {
+	padding: 20px 0 0 20px;
+
+	> [class*='col-']:last-of-type {
+		padding-right: 20px;
+	}
+}
+
+.push-right {
+	float: right;
+}
+
+
+/* ==========================================================================
+   Content Column
+   ========================================================================== */
+
+@for $i from 1 through 12 {
+	@if index(2 3 4 6, $i) == false {
+		.col-1-#{$i} { width: nth($content-column, $i); }
+	}
+	@else {
+		.col-1-#{$i}, .col-#{12 / $i}-12 { width: nth($content-column, $i); }	
+	}
+}
+
+.col-2-3, .col-8-12 {
+	width: 66.66%;
+}
+
+/* ==========================================================================
+   Layout Columns
+   ========================================================================== */
+@for $i from 1 through 5 {
+	.col-#{nth(11 10 9 5 7, $i)}-12 { width: nth($layout-column, $i); }
+}
+
+@media handled, only screen and (max-width: $mobile-screen) {
+	.grid {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	[class*='col-'] {
+		width: auto;
+		float: none;
+		margin: $mobile-vertical-gap 0;
+		padding-left: $mobile-horizontal-gap;
+		padding-right: $mobile-horizontal-gap;
+	}
+}
