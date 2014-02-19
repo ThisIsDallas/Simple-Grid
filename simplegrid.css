@@ -1,9 +1,9 @@
 /*
-  Simple Grid
-  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
-  Project Page - http://thisisdallas.github.com/Simple-Grid/
-  Author - Dallas Bass
-  Site - dallasbass.com
+	Simple Grid
+	Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
+	Project Page - http://thisisdallas.github.com/Simple-Grid/
+	Author - Dallas Bass
+	Site - dallasbass.com
 */
 
 *, *:after, *:before {
@@ -54,26 +54,74 @@ body {
 
 /* Content Columns */
 
-.col-1-1 {
+.col-1-1, .col-2-2, .col-3-3, .col-4-4, .col-5-5, .col-6-6, .col-7-7, .col-8-8, .col-9-9, .col-10-10, .col-12-12 {
 	width: 100%;
 }
-.col-2-3, .col-8-12 {
+.col-2-3, .col-4-6, .col-6-9, .col-8-12 {
 	width: 66.66%;
 }
 
-.col-1-2, .col-6-12 {
+.col-9-10 {
+	width: 90%;
+}
+
+.col-8-9 {
+	width: 88.88%;
+}
+
+.col-7-8 {
+	width: 87.5%;
+}
+
+.col-4-5, .col-8-10 {
+	width: 80%;
+}
+
+.col-7-9 {
+	width: 77.77%;
+}
+
+.col-7-10 {
+	width: 70%;
+}
+
+.col-3-5, .col-6-10 {
+	width: 60%;
+}
+
+.col-5-9 {
+	width: 55.55%
+}
+
+.col-1-2, .col-2-4, .col-3-6, .col-4-8, .col-5-10, .col-6-12 {
 	width: 50%;
 }
 
-.col-1-3, .col-4-12 {
+.col-4-9 {
+	width: 44.44%;
+}
+
+.col-4-10, .col-2-5 {
+	width: 40%;
+}
+
+.col-3-10 {
+	width: 30%;
+}
+
+.col-1-3, .col-3-9, .col-4-12 {
 	width: 33.33%;
 }
 
-.col-1-4, .col-3-12 {
+.col-1-4, .col-2-8, .col-3-12 {
 	width: 25%;
 }
 
-.col-1-5 {
+.col-2-9 {
+	width: 22.22%;
+}
+
+.col-1-5, .col-2-10 {
 	width: 20%;
 }
 
@@ -111,11 +159,11 @@ body {
 	width: 91.66%
 }
 
-.col-10-12 {
+.col-5-6, .col-10-12 {
 	width: 83.333%;
 }
 
-.col-9-12 {
+.col-3-4, .col-6-8, .col-9-12 {
 	width: 75%;
 }
 
@@ -128,8 +176,6 @@ body {
 }
 
 @media handheld, only screen and (max-width: 767px) {
-
-	
 	.grid {
 		width: 100%;
 		min-width: 0;
@@ -138,7 +184,7 @@ body {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-	
+
 	[class*='col-'] {
 		width: auto;
 		float: none;
