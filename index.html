@@ -6,6 +6,15 @@
 		<title>Simple Grid</title>
 		<meta charset="utf-8" />
 		<link rel="stylesheet" type="text/css" href="simplegrid.css" />
+    <style>
+      [class*='col-'] {
+        box-shadow:0 0 1px #888;
+        margin-bottom:1px;
+      }
+      [class*='col-']:after {
+        content: attr(class);
+      }
+    </style>
 	</head>
 
 	<body>
