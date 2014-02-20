@@ -203,7 +203,7 @@ body {
 		padding-right: 0px;
 	}
 
-	[class*='col-'] {
+	[class*='col-']:not(.preserve) {
 		width: auto;
 		float: none;
 		margin-left: 0px;
