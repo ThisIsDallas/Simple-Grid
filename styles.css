@@ -152,6 +152,8 @@ p {
 .examples .content {
 	background: #DADADA;
 	color: #444;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .examples .content:hover {
