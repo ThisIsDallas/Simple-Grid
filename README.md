@@ -27,6 +27,33 @@ If you have a page and would like four columns of content, you would do:
 </pre>
 The first column of content in your grid will always be floated left. If you would like to float a column to the right, all you have to do is add the class <code>push-right</code>.</p>
 
+<h3>Push-Classes</h3>
+<p>To push a column to the right, you can use the <code>push-X-X</code> classes:
+<pre>
+&lt;div class="grid"&gt;
+  &lt;div class="col-1-3 push-1-3"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-1-3 "&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</p>
+
+<h3>Mobile</h3>
+<p>If you don't want to stack all columns on mobile and tablet you can simply add a extra class to each column:
+<pre>
+&lt;div class="grid"&gt;
+  &lt;div class="col-1-3 mobile-col-1-2"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-1-3 mobile-col-1-2"&gt;
+  &lt;/div&gt;
+  &lt;div class="col-1-3 hide-on-mobile"&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+To hide a element (column, div, a, etc.) on mobile and tablets you can add the class <code>hide-on-mobile</code> to it.
+</p>
+
 <h3>Preview</h3>
 <p>To see the grid in action jump on over to the <a href="http://thisisdallas.github.com/Simple-Grid/" title="Simple Grid examples">Simple Grid example page</a>.</p>
 
