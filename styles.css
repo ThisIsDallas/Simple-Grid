@@ -209,6 +209,67 @@ pre.prettyprint {
 	width: 210px;
 }
 
+/* Book form */
+
+form {
+	margin-top: 20px;
+}
+
+form input {
+	padding: 5px;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.book {
+	width: 92%;
+	margin-top: 10px;
+}
+
+.book-text a {
+	font-weight: bold;
+}
+
+/* Mailchimp Styles */
+
+.error,.errorText {
+	margin:5px 0 0 0;
+	padding:5px 10px;
+}
+
+.formstatus {
+	margin-bottom:10px;
+}
+
+.alert {
+	background:#e4f3d4;
+	border:2px solid #5ca000;
+	font-size:14px;
+	color:#5ca000;
+	margin:10px 0;
+	padding:10px;
+}
+
+.alert a {
+	color:#5ca000;
+	text-decoration:underline;
+}
+		
+.error,.errorText {
+	font-size:12px;
+	color:#6b0505;
+	background-color:#f4bfbf;
+}
+
+.hidden-from-view {
+	left:-5000px;
+	position:absolute;
+}
+
+.button {
+	cursor: pointer;
+}
+
 @media handheld, only screen and (max-width: 767px) {
 
 	.ghcred {
