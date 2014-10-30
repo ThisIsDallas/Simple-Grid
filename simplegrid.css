@@ -13,7 +13,7 @@
 }
 
 body {
-	margin: 0px;
+	margin: 0;
 }
 
 [class*='col-'] {
@@ -38,7 +38,7 @@ body {
 .grid-pad {
 	padding-top: 20px;
 	padding-left: 20px; /* grid-space to left */
-	padding-right: 0px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
+	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
 .push-right {
@@ -120,8 +120,6 @@ body {
 	width: 58.33%
 }
 
-
-
 /* Pushing blocks */
 
 .push-2-3, .push-8-12 {
@@ -172,42 +170,34 @@ body {
 	margin-left: 8.33%
 }
 
-
 @media handheld, only screen and (max-width: 767px) {
 	.grid {
 		width: 100%;
 		min-width: 0;
-		margin-left: 0px;
-		margin-right: 0px;
+		margin-left: 0;
+		margin-right: 0;
 		padding-left: 20px; /* grid-space to left */
 		padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
 	}
-	
+
 	[class*='col-'] {
 		width: auto;
 		float: none;
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		padding-left: 0px;
+		margin: 10px 0;
+		padding-left: 0;
 		padding-right: 10px; /* column-space */
 	}
-	
-	
+
 	/* Mobile Layout */
-	
+
 	[class*='mobile-col-'] {
 		float: left;
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-top: 0px;
-		margin-bottom: 10px;
-		padding-left: 0px;
+		margin: 0 0 10px;
+		padding-left: 0;
 		padding-right: 10px; /* column-space */
-		padding-bottom: 0px;
+		padding-bottom: 0;
 	}
-	
+
 	.mobile-col-1-1 {
 		width: 100%;
 	}
@@ -280,7 +270,7 @@ body {
 	.mobile-col-7-12 {
 		width: 58.33%
 	}
-	
+
 	.hide-on-mobile {
 		display: none !important;
 		width: 0;
