@@ -1,0 +1,21 @@
+{
+  "name": "Simple-Grid",
+  "version": "1.0.0",
+  "homepage": "http://thisisdallas.github.io/Simple-Grid/",
+  "authors": [
+    "ThisIsDallas"
+  ],
+  "description": "Simple Grid is a basic lightweight grid",
+  "main": "simplegrid.css",
+  "keywords": [
+    "grid-system"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
