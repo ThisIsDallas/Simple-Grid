@@ -1,0 +1,142 @@
+/*
+  Simple Grid
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - http://ninenineteen.co
+
+  LESS adaptation - Rafael Medina (https://github.com/rmed)
+*/
+
+// ---------------------
+// Variables
+// ---------------------
+@max_width: 1140px;
+@min_width: 748px;
+// When using padded grid on ipad in portrait mode, width should be
+// viewport-width - padding = (768 - 20) = 748. Actually, it should be even
+// smaller to allow for padding of grid containing element
+@max_columns: 12;
+@column_space_normal: 20px;
+@column_space_mobile: 10px;
+@grid_space_left: 20px;
+@grid_space_right_normal: @grid_space_left - @column_space_normal;
+@grid_space_right_mobile: @grid_space_left - @column_space_mobile;
+
+
+// ---------------------
+// General
+// ---------------------
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+
+// ---------------------
+// Grid
+// ---------------------
+[class*='col-'] {
+	float: left;
+    min-height: 1px;
+	padding-right: @column_space_normal;
+}
+
+.grid {
+	width: 100%;
+	max-width: @max_width;
+	min-width: @min_width;
+	margin: 0 auto;
+	overflow: hidden;
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.grid-pad {
+	padding-top: 20px;
+	padding-left: @grid_space_left;
+	padding-right: @grid_space_right_normal;
+}
+
+.push-right {
+	float: right;
+}
+
+
+// ---------------------
+// Helper functions
+// ---------------------
+.generate_helper(@pref, @attr, @n, @d: @n) when (@d <= @max_columns) {
+    // Generate rule
+    .@{pref}-@{n}-@{d} {
+        @{attr}: (@n * 100% / @d);
+    }
+
+    .generate_helper(@pref, @attr, @n, (@d + 1));
+}
+
+.generate_all(@pref, @attr, @n: 1) when (@n <= @max_columns) {
+    .generate_helper(@pref, @attr, @n);
+    .generate_all(@pref, @attr, (@n + 1));
+}
+
+
+// ---------------------
+// Columns
+// ---------------------
+.generate_all(col, width);
+
+
+// ---------------------
+// Pushing Blocks
+// ---------------------
+.generate_all(push, margin-left);
+
+
+// ---------------------
+// Mobile
+// ---------------------
+@media handheld, only screen and (max-width: @max_width) {
+	.grid {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: @grid_space_left;
+		padding-right: @grid_space_right_mobile;
+	}
+
+	[class*='col-'] {
+		width: auto;
+		float: none;
+		margin: 10px 0;
+		padding-left: 0;
+		padding-right: @column_space_mobile;
+	}
+
+    // Mobile layout
+	[class*='mobile-col-'] {
+		float: left;
+		margin: 0 0 10px;
+		padding-left: 0;
+		padding-right: @column_space_mobile;
+		padding-bottom: 0;
+	}
+
+    // Columns
+    .generate_all(mobile-col, width);
+
+	.hide-on-mobile {
+		display: none !important;
+		width: 0;
+		height: 0;
+	}
+}
