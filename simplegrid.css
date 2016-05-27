@@ -192,6 +192,9 @@
 		padding-right: 10px; /* column-space */
 	}
 
+	[class*='col-'] [class*='col-'] {
+		padding-right: 0;
+	}
 
 	/* Mobile Layout */
 
@@ -282,3 +285,4 @@
 		height: 0;
 	}
 }
+
