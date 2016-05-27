@@ -5,14 +5,14 @@
   Site - http://dallasbass.com
 */
 
-*, *:after, *:before {
+
+[class*='grid'],
+[class*='col-'],
+[class*='mobile-'],
+.grid:after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-body {
-	margin: 0;
+	box-sizing: border-box;	
 }
 
 [class*='col-'] {
