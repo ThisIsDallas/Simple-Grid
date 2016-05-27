@@ -17,8 +17,12 @@
 
 [class*='col-'] {
 	float: left;
-  min-height: 1px;
+  	min-height: 1px;
 	padding-right: 20px; /* column-space */
+}
+
+[class*='col-'] [class*='col-']:last-child {
+	padding-right: 0;
 }
 
 .grid {
@@ -187,6 +191,7 @@
 		padding-left: 0;
 		padding-right: 10px; /* column-space */
 	}
+
 
 	/* Mobile Layout */
 
