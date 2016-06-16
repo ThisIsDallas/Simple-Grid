@@ -1,0 +1,19 @@
+{
+  "name": "simple-grid",
+  "version": "1.0.0",
+  "description": "Simple Grid is a basic lightweight grid",
+  "main": "simplegrid.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThisIsDallas/Simple-Grid.git"
+  },
+  "keywords": [
+    "grid-system"
+  ],
+  "author": "ThisIsDallas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ThisIsDallas/Simple-Grid/issues"
+  },
+  "homepage": "https://github.com/ThisIsDallas/Simple-Grid#readme"
+}
