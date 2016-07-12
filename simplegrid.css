@@ -279,6 +279,10 @@
 		width: 58.33%
 	}
 
+	.mobile-push-right {
+		float: right;
+	}
+
 	.hide-on-mobile {
 		display: none !important;
 		width: 0;

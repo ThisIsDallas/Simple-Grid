@@ -55,7 +55,7 @@ The first column of content in your grid will always be floated left. If you wou
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-To hide a element (column, div, a, etc.) on mobile and tablets you can add the class <code>hide-on-mobile</code> to it.
+To hide a element (column, div, a, etc.) on mobile and tablets you can add the class <code>hide-on-mobile</code> to it. To float a column to the right on mobile, just add the class <code>mobile-push-right</code> (especially useful when not stacking columns on mobile).
 </p>
 
 <h3>Preview</h3>
