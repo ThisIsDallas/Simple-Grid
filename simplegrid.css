@@ -17,11 +17,11 @@
 
 [class*='c-'] {
 	float: left;
-  	min-height: 1px;
+  min-height: 1px;
 	padding-right: 20px; /* column-space */
 }
 
-[class*='c-'] [class*='c-']:last-child {
+.grid-pad, [class*='c-'] [class*='c-']:last-child {
 	padding-right: 0;
 }
 
@@ -39,10 +39,13 @@
 	clear: both;
 }
 
+.grid [class*=m-]:last-child {
+	margin-bottom: 0px;
+}
+
 .grid-pad {
-	padding-top: 20px;
+	padding-top: 15px;
 	padding-left: 20px; /* grid-space to left */
-	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
 .push-right {
@@ -180,8 +183,12 @@
 		min-width: 0;
 		margin-left: 0;
 		margin-right: 0;
-		padding-left: 20px; /* grid-space to left */
-		padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+		padding-left: 15px; /* grid-space to left */
+		padding-right: 15px;
+	}
+
+	.grid-pad:last-child {
+		padding-top: 0px;
 	}
 
 	[class*='c-'] {
