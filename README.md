@@ -7,7 +7,7 @@
 <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1"
 &gt;</code>
 
-<p>In terms of use, Simple Grid is basically just like every other grid. Starting out, you need to wrap your grid in a div class named <code>grid</code>. If you want a 20px padding around your grid, add the class <code>grid-pad</code> to the div wrapper. Next, all you have to do is decide what size you want your grid to be and add the appropiate classes. For example, if you want a grid with a left sidebar and main content area you would do:
+<p>In terms of use, Simple Grid is basically just like every other grid. Starting out, you need to wrap your grid in a div class named <code>grid</code>. If you want a 20px padding around your grid, add the class <code>grid-pad</code> to the div wrapper. Next, all you have to do is decide what size you want your grid to be and add the appropriate classes. For example, if you want a grid with a left sidebar and main content area you would do:
 <pre>
 &lt;div class="grid"&gt;
   &lt;div class="col-3-12"&gt;
@@ -55,7 +55,7 @@ The first column of content in your grid will always be floated left. If you wou
   &lt;/div&gt;
 &lt;/div&gt;
 </pre>
-To hide a element (column, div, a, etc.) on mobile and tablets you can add the class <code>hide-on-mobile</code> to it.
+To hide an element (column, div, a, etc.) on mobile and tablets you can add the class <code>hide-on-mobile</code> to it.
 </p>
 
 <h3>Preview</h3>
